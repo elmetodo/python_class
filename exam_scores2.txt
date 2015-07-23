@@ -1,0 +1,9 @@
+keith, english, 67
+keith, maths, 56
+keith, science, 34
+Sophie, english, 82
+Sophie, maths, 78
+Sophie, science, 92
+Nelson, english, 55
+Nelson, maths, 29
+Nelson, science, 73 
