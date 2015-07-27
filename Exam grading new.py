@@ -22,29 +22,34 @@ def list_sort (d):
     sophie_data = newlist[1:2]
     nelson_data = newlist[2:3]
 
-    print scores
-    print names
-    print newlist
+    keith_scores = keith_data[0:2]
+
+
+
+    # print scores
+    # print names
+    # print newlist
+ 	print keith_scores
 
 data=open_file(file_location)
 list_sort(data)
 
-def isNumber(s):
-    try:
-        int(newlist)
-        return True
-    except:
-        return False
+# def isNumber(s):
+#     try:
+#         int(s)
+#         return True
+#     except:
+#         return False
 
-splitstr = [substr.strip().split(' ') for substr in str.split(',')]
-for pair in splitstr:
-    if len(pair)>1:
-        if isNumber(pair[1]):
-            number = int(pair[1])
-        else:
-            number = "Is not a number"
-    else:
-        number = "There is no number"
-    print(pair[0],number)
+# splitstr = [substr.strip().split(' ') for substr in newlist.split(',')]
+# for pair in splitstr:
+#     if len(pair)>1:
+#         if isNumber(pair[1]):
+#             number = int(pair[1])
+#         else:
+#             number = "Is not a number"
+#     else:
+#         number = "There is no number"
+#     print(pair[0],number)
 
-  
+# newlist()
