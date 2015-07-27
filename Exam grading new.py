@@ -1,21 +1,50 @@
-file_location="C:/python_tutorials/exam_scores2.txt"
-
+#no need for making the file loctaion variable global since only one function is using it
+#its better to keep it local under the open file  function
+file_location="C:/python_tutorials/exam_scores3.txt"
 
 def open_file(file):
-	file=open(file_location, "r")
-	data=file.readlines()
-
-	i=0
-	for i in range (0,1):
-		current_file=file_location[i]
-		i=i+1
-		d=open_file(current_file)
-
-		return d
+	
+    	file=open(file_location, "r")
+   	data=file.readlines()
+   	return data
+  
 
 def list_sort (d):
+    list = d
+    newlist=[i.split('\n', 1)[0] for i in d]
+    return newlist
+    names=[i.split(' ,', 1)[0] for i in d]
+    names=[i.split(',', 1)[0] for i in names]
+    scores=[i.split(' ,', 3)[0] for i in d]
+    scores=[i.split(',', 3)[0] for i in names]
 
-	list=d
-	print list
-	names[0,9,18]
-	print names
+    keith_data = newlist[0:1]
+    sophie_data = newlist[1:2]
+    nelson_data = newlist[2:3]
+
+    print scores
+    print names
+    print newlist
+
+data=open_file(file_location)
+list_sort(data)
+
+def isNumber(s):
+    try:
+        int(newlist)
+        return True
+    except:
+        return False
+
+splitstr = [substr.strip().split(' ') for substr in str.split(',')]
+for pair in splitstr:
+    if len(pair)>1:
+        if isNumber(pair[1]):
+            number = int(pair[1])
+        else:
+            number = "Is not a number"
+    else:
+        number = "There is no number"
+    print(pair[0],number)
+
+  
